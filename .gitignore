@@ -11,3 +11,8 @@
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
+
+analysis/anotacaoComunidades.csv
+analysis/anotacaoComunidades.CSV
+*anotacaoComunidades.CSV
+*anotacaoComunidades.csv

@@ -1,0 +1,5 @@
+"method";"correlation";"p-value";"valido";"descricao"
+"BIO";"kendall";"0.521100053348757";"0.00000010271813755125";"Sim";"moderada"
+"ELU";"kendall";"0.351836734693878";"0.000311848133525361";"Sim";"moderada"
+"FIS";"kendall";"0.634285714285714";"0.0000000000805904232237253";"Sim";"moderada"
+"TA";"kendall";"0.493454016053673";"0.000000453360939234315";"Sim";"moderada"

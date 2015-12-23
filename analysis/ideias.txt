@@ -1,0 +1,18 @@
+
+Foco da caracterização
+- respostas através do tempo nos quartis
+- respostas através do tempo dos top 50
+- correlação top 50
+
+- voteup nos quartis
+- voteDown nos quartis
+
+- voteup top 50
+- voteDown top 50
+
+Relação entre respostas e vote up/down dos top50
+
+
+- assuntos mas comentados nas respostas/perguntas dos experts
+- Contagem de conceitos em comum da pergunta e respostas
+- Correlação entre contagem de um conceito na pergunta e contagem de um conceito na resposta

@@ -1,0 +1,5 @@
+"method";"correlation";"p-value";"valido";"descricao"
+"BIO";"spearman";"0.190391450769118";"0.185379772049513";"Nao";"fraca"
+"ELU";"spearman";"0.0647552376219629";"0.655036229082086";"Nao";"fraca"
+"FIS";"spearman";"0.0865505558820649";"0.550074342704705";"Nao";"fraca"
+"TA";"spearman";"0.244014585512722";"0.0876877084997081";"Nao";"fraca"
