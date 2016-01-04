@@ -56,3 +56,5 @@ print(paste("Analise de ", as.character(length(colunas) - 3), " meses"))
 #hist(medias, breaks = 50, xlab = "Average Answers", ylab = "Frequency", main = "Average Answers")
 boxplot(medias,  ylab = "Average Votes Up")
 print(summary(medias))
+
+write.table(medias, file = "mediasTop50VoteUp.csv", sep = ";")

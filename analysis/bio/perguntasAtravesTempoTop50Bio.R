@@ -29,9 +29,9 @@ for(i in 1:nrow(top50dadosPerguntas)) {
   anoMes <- as.character(substr(row$dataCriacao, 1, 7))
   if(ano >= 2012) {
     tabela[usuario, anoMes] <- tabela[usuario, anoMes] + 1  
-  } else {
-    print(paste("Ha dados em ", anoMes))
-  }
+  }# else {
+  #  print(paste("Ha dados em ", anoMes))
+#  }
 }
 
 
@@ -55,5 +55,5 @@ print(paste("Analise de ", as.character(length(colunas) - 3), " meses"))
 boxplot(medias,  ylab = "Average Questions")
 print(summary(medias))
 
-
+write.table(medias, file = "mediasTop50Perguntas.csv", sep = ";")
 

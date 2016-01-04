@@ -65,5 +65,6 @@ print(summary(medias))
 print("Resumo das reputacoes")
 print(resumo)
 
+write.table(medias, file = "mediasQuartisRespostas.csv", sep = ";")
 
 

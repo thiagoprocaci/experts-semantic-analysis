@@ -58,5 +58,7 @@ print(paste("Analise de ", as.character(length(colunas) - 3), " meses"))
 boxplot(medias,  ylab = "Average Answer")
 print(summary(medias))
 
+write.table(medias, file = "mediasTop50Respostas.csv", sep = ";")
+
 
 
