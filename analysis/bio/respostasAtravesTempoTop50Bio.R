@@ -60,5 +60,11 @@ print(summary(medias))
 
 write.table(medias, file = "mediasTop50Respostas.csv", sep = ";")
 
+s <- 0
+for(usuario in usuarioList) {
+   s <- s +  tabela[usuario, "SOMA"];
+}
+print(s)
+
 
 

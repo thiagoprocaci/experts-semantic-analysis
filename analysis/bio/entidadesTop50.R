@@ -9,6 +9,7 @@ dadosComunidade <- subset(dadosParticipacaoGeral, dadosParticipacaoGeral$comunid
 dadosComunidadeTop <- head(dadosComunidade, 50)
 
 excludeEntities <- c('.pdf', 'strong', 'html', 'Nice', 'link', '.com', 'http', 'book', 'click', '.org', 'Wikipedia', 'en.wikipedia.org', 'wiki page')
+#excludeEntities <- c()
 
 dadosEntidadesRespostasTop <- subset(dadosEntidades, dadosEntidades$tipo == 'texto_resposta' & 
                                        !(dadosEntidades$surface %in% excludeEntities)
@@ -28,25 +29,33 @@ contadorPerguntaComTagNaoComumEntidade <- 0
 
 totalRespostaComEntidadeComumPergunta <- 0
 
-
+contadorIteracao <- 1
+totalIteracao <- length(unique(dadosRespostasTop$idPergunta))
 #para cada pergunta onde um top 50 respondeu
-for(idPergunta in unique(dadosRespostasTop$idPergunta)) {
+for(idPer in unique(dadosRespostasTop$idPergunta)) {
+  #print(paste(contadorIteracao, " de ", totalIteracao))
+  contadorIteracao <- contadorIteracao + 1
   # entidades extraidas das perguntas
-  entidadesPergunta <- subset(dadosEntidadesPerguntasTop, dadosEntidadesPerguntasTop$idText == idPergunta)
+  entidadesPergunta <- subset(dadosEntidadesPerguntasTop, dadosEntidadesPerguntasTop$idText == idPer)
   if(nrow(entidadesPergunta) > 0) {
     #entidades
     totalPerguntaComEntidadeIdentificada <- 1 + totalPerguntaComEntidadeIdentificada
     entidadesIdentificadasPerguntas <- c(entidadesIdentificadasPerguntas, as.character(entidadesPergunta$uri))
     
-    tags <- subset(dadosTagBio, dadosTagBio$idPergunta == idPergunta & tolower(dadosTagBio$nomeTag) %in% tolower(entidadesPergunta$surface))
+    tags <- subset(dadosTagBio, dadosTagBio$idPergunta == idPer & gsub("-", " ", tolower(dadosTagBio$nomeTag)) %in% tolower(entidadesPergunta$surface))
     if(nrow(tags) > 0 ) {
+    
       contadorPerguntaComTagComumEntidade <- contadorPerguntaComTagComumEntidade + 1
     } else {
+      tags <- subset(dadosTagBio, dadosTagBio$idPergunta == idPer)
+      print(paste("tags: ",unique(as.character(tags$nomeTag))))
+      print(paste("Entidades: ",unique(as.character(entidadesPergunta$surface))))
+      print("********")
       contadorPerguntaComTagNaoComumEntidade <- contadorPerguntaComTagNaoComumEntidade + 1
     }
     
     #respostas
-    respostasFiltradaPelaPergunta = subset(dadosRespostasTop, dadosRespostasTop$idPergunta == idPergunta)
+    respostasFiltradaPelaPergunta = subset(dadosRespostasTop, dadosRespostasTop$idPergunta == idPer)
     entidadesRespostaComum <- subset(respostasFiltradaPelaPergunta, 
                                      respostasFiltradaPelaPergunta$uri %in% entidadesPergunta$uri)
     
