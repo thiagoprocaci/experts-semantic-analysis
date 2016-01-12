@@ -1,0 +1,13 @@
+html
+http
+page
+wiki
+strong
+wikipedia
+org
+en
+link
+source
+variation
+system
+pictures
