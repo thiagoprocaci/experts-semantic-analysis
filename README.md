@@ -16,7 +16,7 @@ In other words, you will find everything you need to reproduce this research.
 - Run the scripts from BiologiaInsert.zip
 
 ## Comments about the database tables
-The names of the table were written in Portuguese. 
+The names of the tables were written in Portuguese. 
 We translated the names in order to help you to understand.
 
 Table name         | Translation (english)
