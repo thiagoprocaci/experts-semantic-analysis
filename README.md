@@ -14,3 +14,24 @@ In other words, you will find everything you need to reproduce this research.
 - Download the scripts from https://github.com/thiagoprocaci/qarepo
 - Run createDatabase.sql
 - Run the scripts from BiologiaInsert.zip
+
+## Comments about the database tables
+The names of the table were written in Portuguese. 
+We translate the names in order to help you to understand.
+
+Table name         | Translation (english)
+------------------ | ------------------
+usuario            | user
+pergunta           | question
+resposta           | answer
+comentariopergunta | comments on question
+comentarioresposta | comments on answer
+forum              | forum
+anotacoes          | annotations
+entidades          | entities
+tag                | tag
+perguntatag        | question tag
+
+
+## Analysis
+### TABLE I. 	OVERVIEW OF THE BQA REPUTATION SCORE 
