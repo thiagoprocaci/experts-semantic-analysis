@@ -60,4 +60,15 @@ comentario_resposta| Comment on answer text
 
 
 ## Analysis
+To build each analysis, follow the instructions:
 ### TABLE I. 	OVERVIEW OF THE BQA REPUTATION SCORE 
+- Go to folder table-I-reputation
+- Run reputation.sql
+- Export sql data to csv file (like reputation.csv)
+- Run table-1-reputation.R
+
+
+Min. | 1st Qu. |  Median | Mean | 3rd Qu. |  Max. 
+-----|---------|---------|------|---------|-------
+1.0  |  17.0   |  101.0  | 193.5|   136.0 |16660.0 
+
