@@ -1,0 +1,1 @@
+select * from usuario u where u.id like '1_%'

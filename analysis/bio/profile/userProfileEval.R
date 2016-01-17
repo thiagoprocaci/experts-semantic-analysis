@@ -6,7 +6,7 @@ vargha.delaney <- function(r1, r2) {
 }
 
 
-rootDir <- "C:\\Users\\thiag_000\\Desktop\\experts-semantic-analysis\\analysis\\bio\\profile\\dadosRecomendacao"
+rootDir <- "C:\\Users\\thiag_000\\Desktop\\experts-semantic-analysis\\analysis\\bio\\profile\\dadosRecomendacao2"
 initialFiles <- dir(rootDir)
 
 entityList <- c()
@@ -53,6 +53,7 @@ for (f in initialFiles) {
 }
 
 print(tableResult)
+write.table(tableResult, file="profileEval2.csv", sep=";")
 
 config_original = par(no.readonly = TRUE)
 par(mfrow = c(4,3), pty = "s", mar = c(2, 2, 2, 2))
