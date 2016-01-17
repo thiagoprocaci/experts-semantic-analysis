@@ -17,7 +17,7 @@ In other words, you will find everything you need to reproduce this research.
 
 ## Comments about the database tables
 The names of the table were written in Portuguese. 
-We translate the names in order to help you to understand.
+We translated the names in order to help you to understand.
 
 Table name         | Translation (english)
 ------------------ | ------------------
@@ -31,6 +31,32 @@ anotacoes          | annotations
 entidades          | entities
 tag                | tag
 perguntatag        | question tag
+
+We also translated some important table fields:
+
+Field name         | Translation (english)
+------------------ | ------------------
+id                 | id
+reputacao          | reputation
+nome               | name
+titulo             | title
+texto              | text
+usuarioID          | user id
+forumID            | forum id
+perguntaID         | question id
+respostaID         | answer id
+tagID              | tag id
+dataCriacao        | creation date
+votosPositivos     | number of votes up
+votosNegativos     | number of votes down
+numeroVisualizacao | number of visualizations
+tipo               | type
+titulo_pergunta    | Question title
+texto_pergunta     | Question text
+texto_resposta     | Answer text
+comentario_pergunta| Comment on question text
+comentario_resposta| Comment on answer text
+
 
 
 ## Analysis
