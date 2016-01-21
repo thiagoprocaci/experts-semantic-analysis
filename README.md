@@ -95,7 +95,7 @@ ANSWERS              |"kendall"  |"0.577659514570134" |"0.0000000039932188666824
 COMMENTS_ON_QUESTION |"kendall"  |"0.431902165608286" |"0.00000998873197555206"      |"Yes" |"moderate"
 COMMENTS_ON_ANSWERS  |"kendall"  |"0.521100053348757" |"0.00000010271813755125"      |"Yes" |"moderate"
 
-### TABLE IV. 	Expert Recommendation based on User Profiles
+### TABLE IV. 	Users Grouped by Expertise
 - Go to folder table-IV-recommendation
 - Execute all sqls in folder sqls
 - Export sql data to csv data file (like the CSVs in the folder data)
@@ -129,7 +129,7 @@ species             |"4.3077+-4.47" |"0.07835+-0.30" |"< 0,001" |"98%"       |"4
 vaccine             |"5.9744+-5.80" |"0.01282+-0.11" |"< 0,001" |"95%"       |"11"       
 Virus               |"4.4777+-4.52" |"0.02077+-0.16" |"< 0,001" |"97%"       |"31" 
 
-### TABLE V. 	Users Grouped by Expertise
+### TABLE V. 	Users Grouped by Expertise - No reputation
 - Go to folder table-V-recommendation
 - Execute all sqls in folder sqls
 - Export sql data to csv data file (like the CSVs in the folder data)
