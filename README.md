@@ -129,7 +129,7 @@ species             |"4.3077+-4.47" |"0.07835+-0.30" |"< 0,001" |"98%"       |"4
 vaccine             |"5.9744+-5.80" |"0.01282+-0.11" |"< 0,001" |"95%"       |"11"       
 Virus               |"4.4777+-4.52" |"0.02077+-0.16" |"< 0,001" |"97%"       |"31" 
 
-### TABLE V. 	Experts with highest answer number and Profile
+### TABLE V. 	Users Grouped by Expertise
 - Go to folder table-V-recommendation
 - Execute all sqls in folder sqls
 - Export sql data to csv data file (like the CSVs in the folder data)
