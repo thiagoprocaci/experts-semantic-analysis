@@ -7,7 +7,7 @@ for (f in initialFiles) {
   data <- read.csv(filePath, header=TRUE, sep = ';')
   surface <- tolower(unique(as.character(data$surface)))
   userList <- unique(as.character(data$idUsuario))
-  if(length(userList) < 20) {
+  if(length(userList) >= 20) {
     next
   }
   u <- ""
@@ -22,6 +22,6 @@ for (f in initialFiles) {
   sql <- gsub("#USER#", u, sqlTemplate)
   sql <- gsub("#CONCEITO#", surface, sql)
   sql <- gsub('#REF_RECOM#', as.character(length(userList)), sql)
-  cat(sql, file = paste("sql-recommendation\\",surface, '.sql', sep = ""))
+  cat(sql, file = paste("sql-recommendation2\\",surface, '.sql', sep = ""))
 }
 
