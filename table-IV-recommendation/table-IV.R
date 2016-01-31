@@ -55,17 +55,17 @@ for (f in initialFiles) {
 print(tableResult)
 #write.table(tableResult, file="profileEval2.csv", sep=";")
 
-#config_original = par(no.readonly = TRUE)
-#par(mfrow = c(4,3), pty = "s", mar = c(2, 2, 2, 2))
+config_original = par(no.readonly = TRUE)
+par(mfrow = c(4,3), pty = "s", mar = c(2, 2, 2, 2))
 
-#for (f in initialFiles) {
-#  filePath <- paste(rootDir,f,sep = "/")
-#  data <- read.csv(filePath, header=TRUE, sep = ';')
-#  surface <- unique(as.character(data$surface))
-#  voteUpList <- as.numeric(data$votosPositivos)
-#  voteDownList <- as.numeric(data$votosNegativos)
+for (f in initialFiles) {
+  filePath <- paste(rootDir,f,sep = "/")
+  data <- read.csv(filePath, header=TRUE, sep = ';')
+  surface <- unique(as.character(data$surface))
+  voteUpList <- as.numeric(data$votosPositivos)
+  voteDownList <- as.numeric(data$votosNegativos)
   
-  #boxplot(voteUpList, voteDownList, names = c("vote up", "vote down"), main  = surface, ylab = "Evaluations")
-#}
-#par(config_original)
+  boxplot(voteUpList, voteDownList, names = c("vote up", "vote down"), main  = surface, ylab = "Evaluations")
+}
+par(config_original)
 
