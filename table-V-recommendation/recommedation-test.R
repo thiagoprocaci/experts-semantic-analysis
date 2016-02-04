@@ -73,6 +73,7 @@ for (f in initialFiles) {
 }
 
 print(tableResult)
+#write.table(tableResult, file = "tableresult") 
 
 percentList <- as.numeric(gsub("%", "", as.character(tableResult[,"PERCENT"])))
 
