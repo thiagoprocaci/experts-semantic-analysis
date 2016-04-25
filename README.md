@@ -2,7 +2,7 @@
 ## Summary
 This project is part of a scientific research. We are interested in knowing how to find experts in online community.
 You can find here the analysis of the paper "Finding Topical Experts based on Reputation and Semantic Annotations 
-in Question & Answer Communities" published at "xxxx".
+in Question & Answer Communities" published at "The 16th IEEE International Conference on Advanced Learning Technologies - ICALT 2016".
 In other words, you will find everything you need to reproduce this research.
 
 
