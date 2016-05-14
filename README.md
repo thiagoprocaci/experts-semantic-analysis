@@ -13,7 +13,7 @@ In other words, you will find everything you need to reproduce this research.
 ## Loading data into MySQL
 - Download the scripts from https://github.com/thiagoprocaci/qarepo
 - Run createDatabase.sql
-- Run the scripts from BiologiaInsert.zip
+- Run the other scripts and follow the instructions avaliable at https://github.com/thiagoprocaci/qarepo.
 
 ## Comments about the database tables
 The names of the tables were written in Portuguese. 
