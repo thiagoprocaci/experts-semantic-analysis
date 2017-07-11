@@ -13,6 +13,7 @@ In other words, you will find here everything you need to reproduce this researc
 - Download the scripts from https://github.com/thiagoprocaci/qarepo
 - Run createDatabase.sql
 - Run the other scripts and follow the instructions avaliable at https://github.com/thiagoprocaci/qarepo.
+- If you want to use the raw data, take a look at rawdata/dadosBio.zip. However, we recommend using the sql scripts.
 
 ## Comments about the database tables
 The names of the tables were written in Portuguese. 
