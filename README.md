@@ -1,7 +1,7 @@
 # Project experts-semantic-analysis
 ## Summary
 This project is part of a scientific research. We are interested in knowing how to find experts in online community.
-You can find here the analysis of the paper "Finding Topical Experts in Question & Answer Communities" published at "The 16th IEEE International Conference on Advanced Learning Technologies - ICALT 2016".
+You can find here the analysis of the paper "Finding Topical Experts in Question & Answer Communities" published at "The 16th IEEE International Conference on Advanced Learning Technologies - ICALT 2016" (http://ieeexplore.ieee.org/document/7757009/).
 In other words, you will find here everything you need to reproduce this research.
 
 If you use anything related to this research, please cite:
