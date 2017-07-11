@@ -6,15 +6,22 @@ In other words, you will find here everything you need to reproduce this researc
 
 If you use anything related to this research, please cite:
 
+```
 @inproceedings{topical-experts-2016,
+
   title={Finding Topical Experts in Question \& Answer Communities},
+
   author={Procaci, Thiago B and Nunes, Bernardo Pereira and Nurmikko-Fuller, Terhi and Siqueira, Sean WM},
+
   booktitle={Advanced Learning Technologies (ICALT), 2016 IEEE 16th International Conference on},
+
   pages={407--411},
+
   year={2016},
+
   organization={IEEE}
 }
-
+```
 
 ## Setup the environment
 - Install R version 3.1.1 (available at https://www.r-project.org/)
